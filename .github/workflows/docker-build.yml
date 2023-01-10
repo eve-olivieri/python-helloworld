@@ -38,5 +38,6 @@ jobs:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64
+          #option to push the docker image to the docker repo
           push: true
           tags: pixelpotato/python-helloworld:latest
