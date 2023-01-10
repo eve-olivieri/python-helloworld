@@ -40,4 +40,5 @@ jobs:
           platforms: linux/amd64
           #option to push the docker image to the docker repo
           push: true
+          #tags with last version of the application
           tags: pixelpotato/python-helloworld:latest
