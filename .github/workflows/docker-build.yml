@@ -1,0 +1,13 @@
+name: python-helloworld
+on: [push]
+## List the steps to be executed by the workflow
+jobs:
+  ## Set the name of the job
+  build:
+    ## Configure the operating system the workflow should run on.
+    ## In this case, the job on Ubuntu. Additionally, set a the job
+    ## to execute on different Python versions 
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
